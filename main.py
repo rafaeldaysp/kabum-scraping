@@ -4,9 +4,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import telegram_foward
 import planilha_api
-
-#tags = {'notebooks': ['23423a', 'dshfahdsu']}
-
+import time
 
 
 def get_response(url):
@@ -82,6 +80,7 @@ def main():
                                     print(e)  
             except Exception as e:
                 print(e)
+        time.sleep(600)
 
 
 if __name__ == '__main__':
