@@ -66,7 +66,7 @@ def main():
                                 range=SAMPLE_RANGE_NAME).execute()
     planilha = result.get('values', [])
 
-    return planilha, service
+    return planilha
 
 if __name__ == '__main__':
     main()
